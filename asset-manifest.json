@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/gaming-goals/static/css/main.073c9b0a.css",
-    "main.js": "/gaming-goals/static/js/main.e78c54e2.js",
-    "static/js/787.8e0e1846.chunk.js": "/gaming-goals/static/js/787.8e0e1846.chunk.js",
-    "static/media/logo.svg": "/gaming-goals/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/gaming-goals/index.html",
-    "main.073c9b0a.css.map": "/gaming-goals/static/css/main.073c9b0a.css.map",
-    "main.e78c54e2.js.map": "/gaming-goals/static/js/main.e78c54e2.js.map",
-    "787.8e0e1846.chunk.js.map": "/gaming-goals/static/js/787.8e0e1846.chunk.js.map"
+    "main.css": "/static/css/main.4e41b0d7.css",
+    "main.js": "/static/js/main.2c714b58.js",
+    "static/js/787.8e0e1846.chunk.js": "/static/js/787.8e0e1846.chunk.js",
+    "static/media/starry-background.jpg": "/static/media/starry-background.97341795cd6c2531b59b.jpg",
+    "static/media/mm-moon.png": "/static/media/mm-moon.60b2db60493266adbf77.png",
+    "index.html": "/index.html",
+    "main.4e41b0d7.css.map": "/static/css/main.4e41b0d7.css.map",
+    "main.2c714b58.js.map": "/static/js/main.2c714b58.js.map",
+    "787.8e0e1846.chunk.js.map": "/static/js/787.8e0e1846.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.e78c54e2.js"
+    "static/css/main.4e41b0d7.css",
+    "static/js/main.2c714b58.js"
   ]
 }
