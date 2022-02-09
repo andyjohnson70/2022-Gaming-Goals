@@ -1,26 +1,84 @@
 import React from 'react';
-import logo from './logo.svg';
+import ReactDOM from 'react-dom';
+import Countdown from 'react-countdown';
+import { motion } from "framer-motion";
+import moon from './img/mm-moon.png';
 import './App.css';
+
+const quote = "'Begin with the end in mind' - Stephen Covey"
+
+const sentence = {
+  hidden: {opacity: 1},
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.08,
+    },
+  },
+}
+
+const letter = {
+  hidden: {opacity: 0, y: 50},
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+}
+
+const CountdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Display blinking countdown
+  } else {
+    return <div>
+            -{days} Days {hours} Hours {minutes} Minutes {seconds} Seconds Remain-
+          </div>
+  }
+};
+
+function Welcome() {
+  return (
+    <div>
+      <img className='moon' src={moon} />
+      <h1 className='title'>2022 Gaming Goals</h1>
+      <div className='tag-line'>by Andy Johnson</div>
+      <motion.div
+        className='quote'
+        variants={sentence}
+        initial="hidden"
+        animate="visible"
+      >
+          {quote.split("").map((char, index) => {
+            return (
+              <motion.span key={char + "-" + index} variants={letter}>
+                {char}
+              </motion.span>
+            )
+          })}
+      </motion.div>
+      <div className='timer'>
+          <Countdown 
+            date={new Date(2023, 0, 1)}
+            renderer={CountdownRenderer}  
+          />
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app-header">
+        <Welcome />
       </header>
     </div>
   );
 }
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')  
+);
 
 export default App;
