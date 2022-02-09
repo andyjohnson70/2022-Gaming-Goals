@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
 import { motion } from "framer-motion";
 import moon from './img/mm-moon.png';
@@ -75,10 +74,5 @@ function App() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')  
-);
 
 export default App;
