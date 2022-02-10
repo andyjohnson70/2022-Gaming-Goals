@@ -9,33 +9,78 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.arrow-container {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 10px;
+  max-width: 100px;
+  z-index: 3;
+  opacity: 0;
+  animation: fadeIn 2s linear 6s forwards, floating 4s ease-in-out infinite;
+}
+
 .panel-container {
   min-height: 100vh;
-  background-color: #444444;
+  background-color: #222222;
   position: relative;
 }
 
 .game-panel {
+  border-radius: 50px;
   position: absolute;
-  top: 5vh;
-  left: 5vw;
-  min-height: 90vh;
-  min-width: 90vw;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  min-height: 80vh;
+  min-width: 80vw;
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom 5vh;
+  background-position: center center;
   display: flex;
   flex-direction: column;
   box-shadow: 5px 5px 10px 10px #000000cc;
 }
 
+.game-panel-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.game-title {
+  color: #FFFFFF;
+  font-size: 3.5em;
+  font-weight: 700;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+
+.game-goal {
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: 400;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.hide {
+  display: none;
+}
+
 .floating-image {
+  margin: auto;
+  max-height: 200px;
+  max-width: 200px;
   flex: auto;
   animation: floating 3s ease-in-out infinite;
 }
@@ -62,13 +107,13 @@
 
 .timer {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 300;
   animation: fadeIn 2s linear 4s forwards;
   opacity: 0;
 }
 
 .title {
-  font-size: 6vw;
+  font-size: 2.25em;
   margin-bottom: 0px;
 }
 
@@ -84,7 +129,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .app-header {
-    justify-content: center;
+  .floating-image {
+    max-width: 125px;
   }
 }

@@ -6,6 +6,7 @@ import './App.css';
 
 // Welcome section images
 import moon from './img/mm-moon.png';
+import arrow from './img/white-arrow.png';
 
 // Banner images
 import tftBanner from './img/tftBanner.png';
@@ -22,6 +23,7 @@ import stsFloatingImage3 from './img/stsFloatingImage3.png';
 import stsFloatingImage4 from './img/stsFloatingImage4.png';
 import plaFloatingImage from './img/plaFloatingImage.png';
 import sm64FloatingImage from './img/sm64FloatingImage.png';
+import chessFloatingImage from './img/chessFloatingImage.png';
 
 const tftFloatingImages = [
   tftFloatingImage,
@@ -40,6 +42,10 @@ const plaFloatingImages = [
 
 const sm64FloatingImages = [
   sm64FloatingImage,
+];
+
+const chessFloatingImages = [
+  chessFloatingImage,
 ];
 
 const quote = "'Begin with the end in mind' - Stephen Covey"
@@ -99,6 +105,9 @@ function Welcome() {
             renderer={CountdownRenderer}  
           />
       </div>
+      {/* <div className='arrow-container'>
+          <img className='arrow' src={arrow} />
+      </div> */}
     </div>
   );
 }
@@ -146,6 +155,7 @@ function App() {
           title="Chess"
           goal="1100 ELO on chess.com"
           bannerImage={chessBanner}
+          floatingImages={chessFloatingImages}
         />
       </div>
     </div>
