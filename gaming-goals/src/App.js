@@ -1,8 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Countdown from 'react-countdown';
+import GamePanel from './GamePanel';
 import { motion } from "framer-motion";
-import moon from './img/mm-moon.png';
 import './App.css';
+
+// Welcome section images
+import moon from './img/mm-moon.png';
+
+// Banner images
+import tftBanner from './img/tftBanner.png';
+import stsBanner from './img/stsBanner.png';
+import plaBanner from './img/plaBanner.png';
+import sm64Banner from './img/sm64Banner.png';
+import chessBanner from './img/chessBanner.png';
+
+// Floating images
+import tftFloatingImage from './img/tftFloatingImage.png';
+import stsFloatingImage1 from './img/stsFloatingImage1.png';
+import stsFloatingImage2 from './img/stsFloatingImage2.png';
+import stsFloatingImage3 from './img/stsFloatingImage3.png';
+import stsFloatingImage4 from './img/stsFloatingImage4.png';
+import plaFloatingImage from './img/plaFloatingImage.png';
+import sm64FloatingImage from './img/sm64FloatingImage.png';
+
+const tftFloatingImages = [
+  tftFloatingImage,
+];
+
+const stsFloatingImages = [
+  stsFloatingImage1,
+  stsFloatingImage2,
+  stsFloatingImage3,
+  stsFloatingImage4,
+];
+
+const plaFloatingImages = [
+  plaFloatingImage,
+];
+
+const sm64FloatingImages = [
+  sm64FloatingImage,
+];
 
 const quote = "'Begin with the end in mind' - Stephen Covey"
 
@@ -39,7 +77,7 @@ function Welcome() {
   return (
     <div>
       <img className='moon' src={moon} />
-      <h1 className='title'>2022 Gaming Goals</h1>
+      <h1 className='title'>2022 God Gamer Challenge</h1>
       <div className='tag-line'>by Andy Johnson</div>
       <motion.div
         className='quote'
@@ -71,6 +109,45 @@ function App() {
       <header className="app-header">
         <Welcome />
       </header>
+      <div className='panel-container'>
+        <GamePanel 
+          title="Teamfight Tactics"
+          goal="Achieve Masters Rank"
+          bannerImage={tftBanner}
+          floatingImages={tftFloatingImages}
+        />
+      </div>
+      <div className='panel-container'>
+        <GamePanel 
+          title="Slay the Spire"
+          goal="Ascension 20 wins with every character"
+          bannerImage={stsBanner}
+          floatingImages={stsFloatingImages}
+        />
+      </div>
+      <div className='panel-container'>
+        <GamePanel 
+          title="Pokemon Legends: Arceus"
+          goal="KILL GOD"
+          bannerImage={plaBanner}
+          floatingImages={plaFloatingImages}
+        />
+      </div>
+      <div className='panel-container'>
+        <GamePanel 
+          title="Super Mario 64"
+          goal="Sub 22 minute 16 star speedrun"
+          bannerImage={sm64Banner}
+          floatingImages={sm64FloatingImages}
+        />
+      </div>
+      <div className='panel-container'>
+        <GamePanel 
+          title="Chess"
+          goal="1100 ELO on chess.com"
+          bannerImage={chessBanner}
+        />
+      </div>
     </div>
   );
 }

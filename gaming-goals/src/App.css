@@ -9,9 +9,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.panel-container {
+  min-height: 100vh;
+  background-color: #444444;
+  position: relative;
+}
+
+.game-panel {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  min-height: 90vh;
+  min-width: 90vw;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 5vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px 10px #000000cc;
+}
+
+.floating-image {
+  flex: auto;
+  animation: floating 3s ease-in-out infinite;
 }
 
 .moon {
@@ -19,7 +45,7 @@
   top: -50px;
   left: -50px;
   opacity: 0;
-  animation: FadeIn 2s linear 6s forwards;
+  animation: fadeIn 2s linear 6s forwards;
 }
 
 .quote {
@@ -37,16 +63,28 @@
 .timer {
   font-size: 2em;
   font-weight: 600;
-  animation: FadeIn 2s linear 4s forwards;
+  animation: fadeIn 2s linear 4s forwards;
   opacity: 0;
 }
 
 .title {
-  font-size: 8vw;
+  font-size: 6vw;
   margin-bottom: 0px;
 }
 
-@keyframes FadeIn {
+@keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+@keyframes floating {
+  0% {transform: translate(0, 0px);}
+  50% {transform: translate(0, 15px);}
+  100% {transform: translate(0, -0px);}
+}
+
+@media only screen and (max-width: 600px) {
+  .app-header {
+    justify-content: center;
+  }
 }
