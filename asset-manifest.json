@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.559c61d4.css",
-    "main.js": "/static/js/main.4f8bf4ec.js",
+    "main.css": "/static/css/main.9a916f64.css",
+    "main.js": "/static/js/main.e4a195ae.js",
     "static/js/787.8e0e1846.chunk.js": "/static/js/787.8e0e1846.chunk.js",
     "static/media/stsBanner.png": "/static/media/stsBanner.cc47a46536c157e68772.png",
     "static/media/tftFloatingImage.png": "/static/media/tftFloatingImage.0e05d13886b794305fc6.png",
     "static/media/starry-background.jpg": "/static/media/starry-background.97341795cd6c2531b59b.jpg",
+    "static/media/plaBanner.png": "/static/media/plaBanner.92c76ee8b853143d106e.png",
+    "static/media/chessBanner.png": "/static/media/chessBanner.0870212c33908250a203.png",
     "static/media/sm64FloatingImage.png": "/static/media/sm64FloatingImage.70f3af4ac9acd9ba07b4.png",
     "static/media/mm-moon.png": "/static/media/mm-moon.60b2db60493266adbf77.png",
     "static/media/plaFloatingImage.png": "/static/media/plaFloatingImage.952e17d070dfd4c603f4.png",
     "static/media/tftBanner.png": "/static/media/tftBanner.bd572bbaf135bfd3c716.png",
     "static/media/sm64Banner.png": "/static/media/sm64Banner.116a94d3b6e38134765b.png",
-    "static/media/plaBanner.png": "/static/media/plaBanner.623663c005aeef0f37bb.png",
-    "static/media/chessBanner.png": "/static/media/chessBanner.4d28756494ad562da138.png",
     "static/media/stsFloatingImage4.png": "/static/media/stsFloatingImage4.6dfbea353d5bbcb9da8c.png",
     "static/media/stsFloatingImage3.png": "/static/media/stsFloatingImage3.2f192fcd064026a242ff.png",
     "static/media/stsFloatingImage1.png": "/static/media/stsFloatingImage1.d8548d656035b7f9debb.png",
     "static/media/stsFloatingImage2.png": "/static/media/stsFloatingImage2.2cdf5219b806879d5b79.png",
+    "static/media/white-arrow.png": "/static/media/white-arrow.b2b0aaeb396174055241.png",
+    "static/media/chessFloatingImage.png": "/static/media/chessFloatingImage.76a57a421d72c5966c23.png",
     "index.html": "/index.html",
-    "main.559c61d4.css.map": "/static/css/main.559c61d4.css.map",
-    "main.4f8bf4ec.js.map": "/static/js/main.4f8bf4ec.js.map",
+    "main.9a916f64.css.map": "/static/css/main.9a916f64.css.map",
+    "main.e4a195ae.js.map": "/static/js/main.e4a195ae.js.map",
     "787.8e0e1846.chunk.js.map": "/static/js/787.8e0e1846.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.559c61d4.css",
-    "static/js/main.4f8bf4ec.js"
+    "static/css/main.9a916f64.css",
+    "static/js/main.e4a195ae.js"
   ]
 }
