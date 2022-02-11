@@ -105,9 +105,9 @@ function Welcome() {
             renderer={CountdownRenderer}  
           />
       </div>
-      {/* <div className='arrow-container'>
+      <div className='arrow-container'>
           <img className='arrow' src={arrow} />
-      </div> */}
+      </div>
     </div>
   );
 }
