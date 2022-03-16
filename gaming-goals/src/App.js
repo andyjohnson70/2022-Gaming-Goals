@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Countdown from 'react-countdown';
-import GamePanel from './GamePanel';
+import { GamePanel, SlayTheSpire } from './GamePanel';
 import { motion } from "framer-motion";
 import './App.css';
 
@@ -25,9 +25,8 @@ import plaFloatingImage from './img/plaFloatingImage.png';
 import sm64FloatingImage from './img/sm64FloatingImage.png';
 import chessFloatingImage from './img/chessFloatingImage.png';
 
-const tftFloatingImages = [
-  tftFloatingImage,
-];
+// Winning clips and screenshots
+import ironcladWinngingClip from './img/ironcladWinningClip.mp4';
 
 const stsFloatingImages = [
   stsFloatingImage1,
@@ -36,17 +35,13 @@ const stsFloatingImages = [
   stsFloatingImage4,
 ];
 
-const plaFloatingImages = [
-  plaFloatingImage,
-];
+const stsWinningClips = [
+  ironcladWinngingClip,
+]
 
-const sm64FloatingImages = [
-  sm64FloatingImage,
-];
-
-const chessFloatingImages = [
-  chessFloatingImage,
-];
+const stsCharactersCompleted = [
+  1,0,0,0
+]
 
 const quote = "'Begin with the end in mind' - Stephen Covey"
 
@@ -123,15 +118,18 @@ function App() {
           title="Teamfight Tactics"
           goal="Achieve Masters Rank"
           bannerImage={tftBanner}
-          floatingImages={tftFloatingImages}
+          floatingImage={tftFloatingImage}
+          accountLink="https://lolchess.gg/profile/na/liluzihorizonal"
         />
       </div>
       <div className='panel-container'>
-        <GamePanel 
+        <SlayTheSpire
           title="Slay the Spire"
           goal="Ascension 20 wins with every character"
           bannerImage={stsBanner}
           floatingImages={stsFloatingImages}
+          charactersCompleted={stsCharactersCompleted}
+          winningClips={stsWinningClips}
         />
       </div>
       <div className='panel-container'>
@@ -139,7 +137,7 @@ function App() {
           title="Pokemon Legends: Arceus"
           goal="KILL GOD"
           bannerImage={plaBanner}
-          floatingImages={plaFloatingImages}
+          floatingImage={plaFloatingImage}
         />
       </div>
       <div className='panel-container'>
@@ -147,7 +145,7 @@ function App() {
           title="Super Mario 64"
           goal="Sub 22 minute 16 star speedrun"
           bannerImage={sm64Banner}
-          floatingImages={sm64FloatingImages}
+          floatingImage={sm64FloatingImage}
         />
       </div>
       <div className='panel-container'>
@@ -155,7 +153,8 @@ function App() {
           title="Chess"
           goal="1100 ELO on chess.com"
           bannerImage={chessBanner}
-          floatingImages={chessFloatingImages}
+          floatingImage={chessFloatingImage}
+          accountLink="https://www.chess.com/member/andyjohnson70"
         />
       </div>
     </div>
