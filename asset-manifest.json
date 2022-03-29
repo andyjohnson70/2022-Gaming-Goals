@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.97f28ee3.css",
+    "main.css": "/static/css/main.92aa92b2.css",
     "main.js": "/static/js/main.1b4a5d24.js",
     "static/js/787.8e0e1846.chunk.js": "/static/js/787.8e0e1846.chunk.js",
     "static/media/silentWinningClip.mp4": "/static/media/silentWinningClip.4885968d30fdc4615084.mp4",
@@ -24,12 +24,12 @@
     "static/media/white-arrow.png": "/static/media/white-arrow.b2b0aaeb396174055241.png",
     "static/media/chessFloatingImage.png": "/static/media/chessFloatingImage.76a57a421d72c5966c23.png",
     "index.html": "/index.html",
-    "main.97f28ee3.css.map": "/static/css/main.97f28ee3.css.map",
+    "main.92aa92b2.css.map": "/static/css/main.92aa92b2.css.map",
     "main.1b4a5d24.js.map": "/static/js/main.1b4a5d24.js.map",
     "787.8e0e1846.chunk.js.map": "/static/js/787.8e0e1846.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97f28ee3.css",
+    "static/css/main.92aa92b2.css",
     "static/js/main.1b4a5d24.js"
   ]
 }
