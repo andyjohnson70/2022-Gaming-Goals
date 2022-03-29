@@ -27,6 +27,8 @@ import chessFloatingImage from './img/chessFloatingImage.png';
 
 // Winning clips and screenshots
 import ironcladWinngingClip from './img/ironcladWinningClip.mp4';
+import silentWinningClip from './img/silentWinningClip.mp4';
+import plaCompletedImage from './img/plaCompletedImage.png';
 
 const stsFloatingImages = [
   stsFloatingImage1,
@@ -37,10 +39,11 @@ const stsFloatingImages = [
 
 const stsWinningClips = [
   ironcladWinngingClip,
+  silentWinningClip,
 ]
 
 const stsCharactersCompleted = [
-  1,0,0,0
+  1,1,0,0
 ]
 
 const quote = "'Begin with the end in mind' - Stephen Covey"
@@ -138,6 +141,7 @@ function App() {
           goal="KILL GOD"
           bannerImage={plaBanner}
           floatingImage={plaFloatingImage}
+          completedImage={plaCompletedImage}
         />
       </div>
       <div className='panel-container'>

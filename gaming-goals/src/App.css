@@ -28,6 +28,10 @@
   animation: fadeIn 2s linear 6s forwards, floating 4s ease-in-out infinite;
 }
 
+.completed-image {
+  max-width: 100%;
+}
+
 .panel-container {
   min-height: 100vh;
   background-color: #222222;
@@ -93,6 +97,24 @@
   max-width: 200px;
   flex: auto;
   display: inline;
+}
+
+iframe {
+  width: 80vw;
+  height: 70vh;
+  position: absolute;
+  left: 10vw;
+  top: 15vh;
+}
+
+.modal {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.modal-image {
+  max-width: 100%;
 }
 
 .modal-video {
@@ -191,6 +213,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  iframe {
+    width: 460px;
+    height: 230px;
+    position: inherit;
+  }
   .floating-image {
     max-width: 125px;
   }
